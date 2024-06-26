@@ -35,15 +35,21 @@ Steps to run :
 
  9. To train the network using the training script, specify the --model-dir where the model should be saved and the path to your data directory.    
     Here’s an example command with additional options for batch size, workers, and epochs:
+
     python3 train.py --model-dir=models/sportballs data/sportballs --batch-size=32 --workers=4 --epochs=50
-    Explanation of the options:
-    --model-dir=models/cat_dog: Specifies the directory where the trained model will be saved.
-    data/cat_dog: Path to the directory containing your training data.
-    --batch-size=32: Sets the number of samples in each batch during training. Adjust this based on your system's memory capacity and training 
-       dataset size.
-    --workers=4: Number of worker processes to use for data loading during training. Increasing this can speed up data processing if your system 
-       supports it.
-    --epochs=50: Number of complete passes through the training dataset. Adjust based on how many iterations of training you want to perform.
+
+     Explanation of the options:
+
+
+      --model-dir=models/cat_dog: Specifies the directory where the trained model will be saved.
+    
+
+    --batch-size=32: Sets the number of samples in each batch during training. 
+    
+ 
+    --workers=4: Number of worker processes to use for data loading during training. 
+  
+    --epochs=50: Number of complete passes through the training dataset.
 
    
 
