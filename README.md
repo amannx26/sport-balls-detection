@@ -1,12 +1,13 @@
-# sport-balls-detection
+# sport-ball-classifier
 ![image](https://github.com/amannx26/sport-balls-detection/assets/173274284/557c9f92-3d3d-413f-849e-7e75ba939943)
+
 A classification model classify between 7 different sport balls using Resnet-18
 
 Steps to run : 
 
 You have to install jetson inteference and Docker from https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md
 
-After that, you have to 
+After installing Jetson Inference and Docker as per the provided link, here are the steps to create and set up your GitHub repository for a classification model that distinguishes between 7 different sport balls using ResNet-18: 
 
 
 
