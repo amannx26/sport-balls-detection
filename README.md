@@ -19,18 +19,19 @@ Steps to run :
   2.run the training script and Change directories into jetson-inference/python/training/classification/data
   
   3.Run this command:
-  wget https://nvidia.box.com/shared/static/o577zd8yp3lmxf5zhm38svrbrv45am3y.gz -O cat_dog.tar.gz
-     ![image](https://github.com/amannx26/sport-balls-detection/assets/173274284/4aedaf3c-04c7-4a63-a3d2-ae8f30ec6a55)
- 
-  4.Run this command to unzip the file you downloaded.
+   (  wget https://nvidia.box.com/shared/static/o577zd8yp3lmxf5zhm38svrbrv45am3y.gz -O cat_dog.tar.gz
+       ![image](https://github.com/amannx26/sport-balls-detection/assets/173274284/4aedaf3c-04c7-4a63-a3d2-ae8f30ec6a55) )
+   
+  4. Run this command to unzip the file you downloaded.
       tar xvzf cat_dog.tar.gz
       ![image](https://github.com/amannx26/sport-balls-detection/assets/173274284/5cd726ce-b338-4219-82ca-80d38435f37f)
  
   
-  5.cd back to nvidia/jetson-inference/
+  5. cd back to nvidia/jetson-inference/
   
    
-  6.To prevent potential memory errors later on, ensure your system can allocate more memory for tasks by running this command in your terminal while    in the jetson-inference directory.
+  6. To prevent potential memory errors later on, ensure your system can allocate more memory for tasks by running this command in your terminal   
+     while in the jetson-inference directory.
      echo 1 | sudo tee /proc/sys/vm/overcommit_memory
   
   7. After completing the previous step in the jetson-inference folder, execute ./docker/run.sh to start the docker container. You may need to re-  
@@ -62,21 +63,21 @@ Steps to run :
  ![image](https://github.com/amannx26/sport-balls-detection/assets/173274284/2722b084-c10a-43df-88f1-f0d0e13d247e)
  While it's running, you can stop it anytime with Ctrl+C. You can also restart training later using the --resume and --epoch-start flags, allowing you to test the model without waiting for training to finish.
     
- Additional Information:
+    (Additional Information:
+    
+    Run python3 train.py --help for details on available options, including different networks you can experiment with using the --arch flag.
+    
+    If you haven't adjusted memory settings and encounter out-of-memory errors, you can enable overcommitting memory by running this command in your terminal:
+    echo 1 | sudo tee /proc/sys/vm/overcommit_memory
+    This allows your system to allocate more memory for tasks, potentially resolving memory-related issues during execution.)
  
- Run python3 train.py --help for details on available options, including different networks you can experiment with using the --arch flag.
- 
- If you haven't adjusted memory settings and encounter out-of-memory errors, you can enable overcommitting memory by running this command in your terminal:
- echo 1 | sudo tee /proc/sys/vm/overcommit_memory
- This allows your system to allocate more memory for tasks, potentially resolving memory-related issues during execution.
- 
-  12.Make sure you are in the docker container and in jetson-inference/python/training/classification
+  12. Make sure you are in the docker container and in jetson-inference/python/training/classification
   
-  13.Run the onnx export script:
+  13. Run the onnx export script:
   
-  python3 onnx_export.py --model-dir=models/sportballs
+     python3 onnx_export.py --model-dir=models/sportballs
   
-  14.Look in the jetson-inference/python/training/classification/models/sportballs folder to see if there is a new model called resnet18.onnx there. 
+  14. Look in the jetson-inference/python/training/classification/models/sportballs folder to see if there is a new model called resnet18.onnx there. 
   That is your re-trained model!
   ![image](https://github.com/amannx26/sport-balls-detection/assets/173274284/ec2f40dd-eb21-42a9-9761-94c146b32709)
  
