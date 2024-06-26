@@ -21,7 +21,7 @@ Steps to run :
    wget https://nvidia.box.com/shared/static/o577zd8yp3lmxf5zhm38svrbrv45am3y.gz -O cat_dog.tar.gz
 
  4.Run this command to unzip the file you downloaded.
-   tar xvzf cat_dog.tar.gz
+    tar xvzf cat_dog.tar.gz
 
  5.cd back to nvidia/jetson-inference/
  
