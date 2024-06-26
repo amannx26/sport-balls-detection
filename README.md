@@ -9,6 +9,8 @@ You have to install jetson inteference and Docker from https://github.com/dusty-
 After that, you have to 
 
 
+![image](https://github.com/amannx26/sport-balls-detection/assets/173274284/557c9f92-3d3d-413f-849e-7e75ba939943)
+
 
 
 
