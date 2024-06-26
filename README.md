@@ -97,6 +97,8 @@ Steps to run :
 
 
 
+If you have any problem you may watch this tutorial
+https://www.youtube.com/watch?v=sN6aT9TpltU&t=1159s
 
 
 
@@ -105,4 +107,3 @@ Steps to run :
 
 
 
-[View a video explanation here](video link)
