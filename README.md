@@ -8,7 +8,7 @@ Steps to run :
 You have to install jetson inteference and Docker from https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md
 
 After installing Jetson Inference and Docker as per the provided link, here are the steps to create and set up your GitHub repository for a classification model that distinguishes between 7 different sport balls using ResNet-18: 
-
+.
 
 
 
