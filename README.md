@@ -71,9 +71,13 @@ Steps to run :
  This allows your system to allocate more memory for tasks, potentially resolving memory-related issues during execution.
  
   12.Make sure you are in the docker container and in jetson-inference/python/training/classification
-  13.Run the onnx export script.
+  
+  13.Run the onnx export script:
+  
   python3 onnx_export.py --model-dir=models/sportballs
-  14.Look in the jetson-inference/python/training/classification/models/sportballs folder to see if there is a new model called resnet18.onnx there.   That is your re-trained model!
+  
+  14.Look in the jetson-inference/python/training/classification/models/sportballs folder to see if there is a new model called resnet18.onnx there. 
+  That is your re-trained model!
   ![image](https://github.com/amannx26/sport-balls-detection/assets/173274284/ec2f40dd-eb21-42a9-9761-94c146b32709)
  
   Our Next Step Is processing images!
